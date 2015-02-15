@@ -1,0 +1,32 @@
+/*
+Theme Name: LAP - Theme
+Theme URI: http://lapplatform.com/
+Description: Tema desarrollado para LAP life achievement platform
+Author: @icebergnueve @doctypemx
+Author URI:
+Version: 1
+*/
+
+@import "bootstrap/css/bootstrap.min.css";
+@import "animate.css";
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700)
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css)
+
+/* Mobile Firts */
+/*@media screen and (max-width:719px)*/
+@import "base.styl";
+
+
+/* Tablets: Portrait */
+@media screen and (min-width:720px)  and (max-width:909px)
+	@import "tablet_p.styl";
+
+/* Tablets: Landscape */
+//@media screen and (min-width:960px) and (max-width:1199px)
+//	@import "tablet_l.styl";
+
+/* Desktops */
+@media screen and (min-width:910px)
+	@import "desktop.styl";
