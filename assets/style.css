@@ -8,6 +8,7 @@ Version: 1
 */
 @import "bootstrap/css/bootstrap.min.css";
 @import "animate.css";
+@import "hover-min.css";
 @import url("http://fonts.googleapis.com/css?family=Nunito:400,300,700");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /* Mobile Firts */
@@ -24,7 +25,8 @@ a {
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-a:hover {
+a:hover,
+a:active {
   color: #000;
 }
 h2 {
@@ -141,6 +143,9 @@ h2 {
 #nosotros .avatar img {
   border: solid 5px #fdb441;
 }
+#clientes {
+  text-align: center;
+}
 #contacta {
   background: url("social-stuff-small.png") 50% 100px no-repeat transparent;
   height: 300px;
@@ -158,6 +163,59 @@ h2 {
   }
   .navigator {
     margin-top: 10px;
+  }
+  nav {
+    background: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  nav i {
+    color: #fff;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    background: #fdb441;
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav ul li:hover > ul {
+    display: block;
+  }
+  nav ul li:hover > i {
+    display: none;
+  }
+  nav ul li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li ul li {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0;
+  }
+  nav ul li ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+  }
+  nav ul li ul li a:hover {
+    background: #f4f4f4;
+    color: #000;
+  }
+  nav ul li ul li a i {
+    color: #000;
   }
   #intro {
     background: url("social-stuff-top.png") 50% 100% no-repeat transparent;
@@ -228,6 +286,16 @@ h2 {
   }
   #nosotros .socios img {
     margin: 0 auto;
+  }
+  #clientes {
+    height: 500px;
+  }
+  #clientes .content {
+    margin-top: 40px;
+  }
+  #clientes .content img {
+    margin: 0 auto;
+    width: 80%;
   }
   #contacta {
     background: url("social-stuff-small.png") 50% 100px no-repeat transparent;

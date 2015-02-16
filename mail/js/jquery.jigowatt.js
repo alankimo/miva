@@ -8,16 +8,17 @@ jQuery(document).ready(function(){
 		$('#message').hide();
 
  		$('#submit')
-			.after('<img src="assets/ajax-loader.gif" class="loader" />')
+			.after('<img src="http://miva-networking.com/mail/assets/ajax-loader.gif" class="loader" />')
 			.attr('disabled','disabled');
 
 		$.post(action, {
 			name: $('#name').val(),
 			email: $('#email').val(),
 			phone: $('#phone').val(),
+			empresa: $('#empresa').val(),
 			//subject: $('#subject').val(),
 			//comments: $('#comments').val(),
-			verify: $('#verify').val()
+			//verify: $('#verify').val()
 		},
 			function(data){
 				document.getElementById('message').innerHTML = data;

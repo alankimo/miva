@@ -6,6 +6,55 @@ body
 .navigator
 	margin-top 10px
 	
+nav
+	background base
+	position fixed
+	top 0
+	left 0
+	z-index 2
+	
+	i
+		color #fff
+	
+	ul
+		margin 0
+		padding 0
+		
+		li
+			background primario
+			display block
+			padding 20px
+			text-transform uppercase
+			transition(1s)
+				
+			&:hover > ul
+				display block
+				
+			&:hover > i
+				display none
+	
+			ul
+				display none
+				margin 0
+				padding 0
+				
+				li
+					list-style none
+					padding 0
+					margin 2px 0
+					
+					a
+						color #fff
+						display block
+						padding 10px
+						
+						&:hover
+							background base
+							color #000
+							
+						i
+							color #000
+	
 #intro
 	background url(social-stuff-top.png) 50% 100% no-repeat transparent
 	height 100%
@@ -76,6 +125,16 @@ body
 		
 		img
 			margin 0 auto
-			
+
+#clientes
+	height 500px
+	
+	.content
+		margin-top 40px
+		
+		img
+			margin 0 auto
+			width 80%
+
 #contacta
 	background url(social-stuff-small.png) 50% 100px no-repeat transparent
