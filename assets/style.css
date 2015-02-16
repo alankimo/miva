@@ -16,6 +16,17 @@ body {
   background: url("social-stuff-small.png") 50% 400px no-repeat transparent;
   font: 300 1.2em/1.5em 'Nunito', sans-serif;
 }
+a {
+  color: #fdb441;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+a:hover {
+  color: #000;
+}
 h2 {
   font-size: 2.8em;
 }
@@ -28,6 +39,31 @@ h2 {
 }
 .navigator i {
   color: #fdb441;
+}
+.btn-base {
+  background: #000;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  color: #fff;
+}
+.btn-base:hover,
+.btn-base:active {
+  background: #fdb441;
+  color: #fff;
+}
+.input-primario {
+  background: #fdb441;
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 20px 10px;
+}
+.input-primario::-webkit-input-placeholder {
+  color: #fff;
 }
 #intro {
   height: 100%;
@@ -108,6 +144,10 @@ h2 {
 #contacta {
   background: url("social-stuff-small.png") 50% 100px no-repeat transparent;
   height: 300px;
+  text-align: center;
+}
+#contacta form {
+  margin-top: 40px;
 }
 /* Tablets: Portrait */
 /* Tablets: Landscape */

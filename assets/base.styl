@@ -4,6 +4,13 @@ body
 	background url(social-stuff-small.png) 50% 400px no-repeat transparent
 	font 300 1.2em/1.5em webfont
 
+a
+	color primario
+	transition(.2s)
+	
+	&:hover
+		color #000
+
 h2
 	font-size 2.8em
 	
@@ -16,6 +23,27 @@ h2
 	text-align center
 	i
 		color primario
+		
+.btn-base
+	background #000
+	border-radius(0px)
+	color #fff
+	
+	&:hover
+	&:active
+		background primario
+		color #fff
+		
+.input-primario
+	background primario
+	border none
+	border-radius(0px)
+	color #fff
+	font-size 1.2em
+	padding 20px 10px
+	
+	&::-webkit-input-placeholder
+		color #fff
 
 #intro
 	height 100%
@@ -93,3 +121,7 @@ h2
 #contacta
 	background url(social-stuff-small.png) 50% 100px no-repeat transparent
 	height 300px
+	text-align center
+	
+	form
+		margin-top 40px

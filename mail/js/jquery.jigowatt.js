@@ -15,8 +15,8 @@ jQuery(document).ready(function(){
 			name: $('#name').val(),
 			email: $('#email').val(),
 			phone: $('#phone').val(),
-			subject: $('#subject').val(),
-			comments: $('#comments').val(),
+			//subject: $('#subject').val(),
+			//comments: $('#comments').val(),
 			verify: $('#verify').val()
 		},
 			function(data){

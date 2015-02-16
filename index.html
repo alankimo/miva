@@ -166,38 +166,45 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="title wow fadeIn">
-					<h2>Contáctanos 0</h2>
+					<h2>Contáctanos</h2>
 				</div>
 			</div>
 			<div class="col-xs-10 col-xs-offset-1">
 				<div class="content">
 
-					<div id="contact">
+					<div id="contact" class="wow fadeInUp" data-wow-duration="2s">
+
+							<h4>Envianos tus datos y en breve un asesor se pondrá en contacto contigo.</h4>
 
 							<div id="message"></div>
 
-							<form method="post" action="http://miva-networking.com/mail/contact.php" name="contactform" id="contactform">
+							<form method="post" action="mail/contact.php" name="contactform" id="contactform">
 
 							<fieldset>
 
-							<legend>Please fill in the following form to contact us</legend>
-
-							<input name="name" type="text" id="name" size="30" placeholder="Nombre" value="" />
-
-							<input name="email" type="text" id="email" size="30" placeholder="Email" value="" />
-
-							<input name="phone" type="text" id="phone" size="30" placeholder="Teléfono" value="" />
-
-							<p><span class="required">*</span> Are you human?</p>
-
-							<label for="verify" accesskey="V">&nbsp;&nbsp;&nbsp;3 + 1 =</label>
-							<input name="verify" type="text" id="verify" size="4" value="" style="width: 30px;" /><br /><br />
-
-							<input type="submit" class="submit" id="submit" value="Submit" />
+							<div class="row">
+								<div class="col-lg-3">
+									<input name="name" type="text" id="name" size="30" placeholder="Nombre" class="form-control input-primario" value="" />
+								</div>
+								<div class="col-lg-3">
+									<input name="empresa" type="text" id="empresa" size="30" placeholder="Empresa / Sitio Web" class="form-control input-primario" value="" />
+								</div>
+								<div class="col-lg-2">
+									<input name="email" type="text" id="email" size="30" placeholder="Email" class="form-control input-primario" value="" />
+								</div>
+								<div class="col-lg-2">
+									<input name="phone" type="text" id="phone" size="30" placeholder="Teléfono" class="form-control input-primario" value="" />
+								</div>
+								<div class="col-lg-2">
+									<input type="submit" class="submit btn btn-block btn-base" id="submit" value="Enviar" />
+								</div>
+							</div>
 
 							</fieldset>
 
 							</form>
+
+							<p><a href="https://www.facebook.com/MiVaNetworking"><i class="fa fa-facebook"></i> /MiVaNetworking</a> | <a href="https://twiter.com/miva_networking"><i class="fa fa-twitter"></i> @MiVa_Networking</a></p>
 
 					</div>
 
@@ -210,11 +217,10 @@
 
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mail/js/jquery.jigowatt.js"></script>
 <script type="text/javascript" src="assets/retina.min.js"></script>
 <script type="text/javascript" src="assets/wow.min.js"></script>
-<script type="text/javascript" src="mail/js/jquery.jigowatt.js"></script>
 <script type="text/javascript" src="assets/code.js"></script>
-
 
 </body>
 </html>

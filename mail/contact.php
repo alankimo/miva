@@ -33,10 +33,10 @@ if(trim($name) == '') {
 	exit();
 }
 
-if(trim($subject) != '') {
+if(trim($subject) == '') {
 	echo '<div class="error_message">Attention! Please enter a subject.</div>';
 	exit();
-} else if(trim($comments) != '') {
+} else if(trim($comments) == '') {
 	echo '<div class="error_message">Attention! Please enter your message.</div>';
 	exit();
 } else if(!isset($verify) || trim($verify) == '') {
